@@ -1,14 +1,21 @@
-let nombre:string = "Juan";
-let apellido:string = "Perez";
-let edad:number = 32;
+//parametro obligatorio quien:string
+//parametro defecto objeto:string = "batisenal" enviando un parametro por defecto
+//parametro opcional momento?:string
+function activar( quien:string, objeto:string="batisenal", momento?:string){
+    let mensaje:string;
 
-//let texto = "Hola, " + nombre + " " + apellido + "("+ edad +")";
+    if (momento){
+        mensaje = `${ quien } activo la ${objeto} en la ${momento}`;
+    }else{
+        mensaje = `${ quien } activo la ${objeto}`;
+    }
 
-let texto = `Hola, ${nombre} ${apellido} (${edad})`;
+   
 
-let texto2:string = `${1+2}`;
+    console.log(mensaje);
+}
 
-console.log(texto2);
+activar("Gordon", "batisenal", "tarde");
 
 
 
