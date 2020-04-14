@@ -1,18 +1,11 @@
-//desectructuracion de un objeto
-// // let miFuncion3F = (nombre:string) => {
-// let avenger = {
-//     nombre: "Steve",
-//     clave: "Capitan America",
-//     poder: "Droga"
-// }
-// let { nombre, clave, poder } = avenger;
-// // let nombre = avenger.nombre;
-// // let clave = avenger.clave;
-// // let poder = avenger.poder;
-// console.log(nombre, clave, poder);
-//desestructuracion de arreglos
-var avengers = ["Thor", "Steve", "Tony"];
-var thor = avengers[0], capi = avengers[1], ironman = avengers[2];
-//solo mostrara a tony
-//let [, , ironman] = avengers;
-console.log(thor, capi, ironman);
+var prom1 = new Promise(function (resolve, reject) {
+    setTimeout(function () {
+        console.log("Promesa terminada");
+        resolve();
+    }, 1500);
+});
+prom1.then(function () {
+    console.log("Ejecutarme cuando se termine bien");
+}, function () {
+    console.log("Ejecutarme cuando se termine mal");
+});
