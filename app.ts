@@ -1,38 +1,24 @@
-// let miFuncion = function(a:any){
-//     return a;
+//desectructuracion de un objeto
+
+// // let miFuncion3F = (nombre:string) => {
+// let avenger = {
+//     nombre: "Steve",
+//     clave: "Capitan America",
+//     poder: "Droga"
 // }
 
-// let miFuncionF = (a: any) => a;
+// let { nombre, clave, poder } = avenger;
+// // let nombre = avenger.nombre;
+// // let clave = avenger.clave;
+// // let poder = avenger.poder;
 
+// console.log(nombre, clave, poder);
 
-// let miFuncion2 = function(a:number, b:number){
-//     return a + b;
-// }
+//desestructuracion de arreglos
+let avengers:string[] = ["Thor", "Steve", "Tony"];
 
-// let miFuncion2F = (a:number, b:number) => a+b;
+let [thor, capi, ironman] = avengers;
+//solo mostrara a tony
+//let [, , ironman] = avengers;
 
-// let miFuncion3 = function(nombre:string){
-//     nombre = nombre.toLocaleUpperCase();
-//     return nombre;
-// }
-
-// let miFuncion3F = (nombre:string) => {
-//     nombre = nombre.toLocaleUpperCase();
-//     return nombre;
-// }
-
-// console.log();
-
-let nombre = "Pedro";
-
-let hulk = {
-    nombre: "Hulk",
-    smash(){
-
-        setTimeout( () => console.log(this.nombre + " smash!!"), 1500);
-        
-    }
-}
-
-hulk.smash();
-
+console.log( thor, capi, ironman);
