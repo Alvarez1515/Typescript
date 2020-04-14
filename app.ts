@@ -1,1 +1,14 @@
-// Un archivo simple de TypeScript
+let nombre:string = "Juan";
+let apellido:string = "Perez";
+let edad:number = 32;
+
+//let texto = "Hola, " + nombre + " " + apellido + "("+ edad +")";
+
+let texto = `Hola, ${nombre} ${apellido} (${edad})`;
+
+let texto2:string = `${1+2}`;
+
+console.log(texto2);
+
+
+
