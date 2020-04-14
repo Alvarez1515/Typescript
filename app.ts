@@ -1,21 +1,38 @@
-//parametro obligatorio quien:string
-//parametro defecto objeto:string = "batisenal" enviando un parametro por defecto
-//parametro opcional momento?:string
-function activar( quien:string, objeto:string="batisenal", momento?:string){
-    let mensaje:string;
+// let miFuncion = function(a:any){
+//     return a;
+// }
 
-    if (momento){
-        mensaje = `${ quien } activo la ${objeto} en la ${momento}`;
-    }else{
-        mensaje = `${ quien } activo la ${objeto}`;
+// let miFuncionF = (a: any) => a;
+
+
+// let miFuncion2 = function(a:number, b:number){
+//     return a + b;
+// }
+
+// let miFuncion2F = (a:number, b:number) => a+b;
+
+// let miFuncion3 = function(nombre:string){
+//     nombre = nombre.toLocaleUpperCase();
+//     return nombre;
+// }
+
+// let miFuncion3F = (nombre:string) => {
+//     nombre = nombre.toLocaleUpperCase();
+//     return nombre;
+// }
+
+// console.log();
+
+let nombre = "Pedro";
+
+let hulk = {
+    nombre: "Hulk",
+    smash(){
+
+        setTimeout( () => console.log(this.nombre + " smash!!"), 1500);
+        
     }
-
-   
-
-    console.log(mensaje);
 }
 
-activar("Gordon", "batisenal", "tarde");
-
-
+hulk.smash();
 
