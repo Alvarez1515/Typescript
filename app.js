@@ -1,8 +1,7 @@
-function enviarMision(xmen) {
-    console.log("Enviando a: " + xmen.nombre);
-}
-var wolverine = {
-    nombre: "Wolverine",
-    poder: "Regeneracion"
-};
-enviarMision(wolverine);
+var Avenger = /** @class */ (function () {
+    function Avenger() {
+    }
+    return Avenger;
+}());
+var antman = new Avenger();
+console.log(antman);

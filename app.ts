@@ -1,15 +1,14 @@
-interface Xmen{
-    nombre:string,
-    poder:string
+class Avenger{
+
+    nombre:string;
+    equipo:string;
+    nombreReal:string;
+
+    puedePelear:boolean;
+    peleasGanadas:number;
+
 }
 
-function enviarMision(xmen: Xmen){
-    console.log("Enviando a: " + xmen.nombre);
-}
+let antman:Avenger = new Avenger();
 
-let wolverine = {
-    nombre: "Wolverine",
-    poder: "Regeneracion"
-};
-
-enviarMision(wolverine);
+console.log(antman);
