@@ -1,7 +1,11 @@
 var Avenger = /** @class */ (function () {
-    function Avenger() {
+    function Avenger(nombre, equipo, nombreReal) {
+        this.nombre = "Sin nombre";
+        this.nombre = nombre;
+        this.equipo = equipo;
+        this.nombreReal = nombreReal;
     }
     return Avenger;
 }());
-var antman = new Avenger();
+var antman = new Avenger("Antman", "Cap", "Scoot lang");
 console.log(antman);
