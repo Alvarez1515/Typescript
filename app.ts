@@ -1,20 +1,14 @@
-class Avenger{
+function consola( constructor:Function ) {
+    console.log( constructor );
+} 
 
-    nombre:string = "Sin nombre";
-    equipo:string;
-    nombreReal:string;
 
-    puedePelear:boolean;
-    peleasGanadas:number;
 
-    constructor( nombre:string, equipo:string, nombreReal:string){
-        this.nombre=nombre;
-        this.equipo=equipo;
-        this.nombreReal=nombreReal;
+@consola
+class Villano{
+
+    constructor(public nombre:string){
+        
     }
 
 }
-
-let antman:Avenger = new Avenger("Antman","Cap","Scoot lang");
-
-console.log(antman);
